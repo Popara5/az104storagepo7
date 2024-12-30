@@ -1,0 +1,80 @@
+{
+    "apiVersion": "2023-05-01",
+    "id": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/resourceGroups/az104-rg7/providers/Microsoft.Storage/storageAccounts/az104storagepo7",
+    "name": "az104storagepo7",
+    "type": "microsoft.storage/storageaccounts",
+    "sku": {
+        "name": "Standard_RAGRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Disabled",
+        "keyCreationTime": {
+            "key1": "2024-12-30T14:01:23.952Z",
+            "key2": "2024-12-30T14:01:23.952Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": true,
+        "largeFileSharesState": "Enabled",
+        "networkAcls": {
+            "ipv6Rules": [],
+            "resourceAccessRules": [
+                {
+                    "tenantId": "cc21b1ed-90b9-4515-9a68-058a2ceb1966",
+                    "resourceId": "/subscriptions/c026ac07-ffac-4e08-b69c-9240e6d12833/providers/Microsoft.Security/datascanners/storageDataScanner"
+                }
+            ],
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Deny"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-12-30T14:01:24.358Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-12-30T14:01:24.358Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-12-30T14:01:23.811Z",
+        "primaryEndpoints": {
+            "dfs": "https://az104storagepo7.dfs.core.windows.net/",
+            "web": "https://az104storagepo7.z13.web.core.windows.net/",
+            "blob": "https://az104storagepo7.blob.core.windows.net/",
+            "queue": "https://az104storagepo7.queue.core.windows.net/",
+            "table": "https://az104storagepo7.table.core.windows.net/",
+            "file": "https://az104storagepo7.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available",
+        "secondaryLocation": "westus",
+        "statusOfSecondary": "available",
+        "secondaryEndpoints": {
+            "dfs": "https://az104storagepo7-secondary.dfs.core.windows.net/",
+            "web": "https://az104storagepo7-secondary.z13.web.core.windows.net/",
+            "blob": "https://az104storagepo7-secondary.blob.core.windows.net/",
+            "queue": "https://az104storagepo7-secondary.queue.core.windows.net/",
+            "table": "https://az104storagepo7-secondary.table.core.windows.net/"
+        }
+    }
+}
